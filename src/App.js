@@ -1,41 +1,19 @@
 import './App.css';
-
+import Navbar from './components/Navbar';
+import UserProfileCard from './components/UserProfileCard';
+import SiteIntro from './components/SiteIntro';
 function App() {
   return (
    <>
-   <nav className="navbar navbar-expand-lg bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/">Action</a></li>
-            <li><a className="dropdown-item" href="/">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button classNameName="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<Navbar/>
+<SiteIntro/>
+<div className='container d-flex flex-wrap justify-content-center justify-content-lg-start'>
+<UserProfileCard src="https://source.unsplash.com/random/250x250/?man,boy" title='Zacky Chayn' text="This is Zacy Chyan from Kuwait and I love reading people's mind" />
+<UserProfileCard src="https://source.unsplash.com/random/250x250/?girl,female" title='Preeti Ojha' text="This is Preeti Ojha from Chautara and I love hiking tall mountains." />
+<UserProfileCard src="https://source.unsplash.com/random/250x250/?male,topG" title='Pranil Shrestha' text="This is Pranil Shrestha from Thimi, Bhaktapur and I love women." />
+<UserProfileCard src="https://source.unsplash.com/random/250x250/?male,boy" title='Pratik Sharma' text="This is Pratik Sharma from Syayle, Chautara and I love to talk with older women." />
+<UserProfileCard src="https://source.unsplash.com/random/250x250/?female,woman" title='Suhana Singh' text="This is Suhana Singh from Mustang, Nepal and I am looking for a parter to spend my life with." />
+</div>
    </>
   );
 }

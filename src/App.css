@@ -36,31 +36,6 @@
     transform: rotate(360deg);
   }
 }
-
-nav{
-  display:flex;
-  justify-content: space-between;
-  background:rgba(0, 0,0, 0.5);
-  height:10vh;
-  align-items: center;
-  color:white;
-  font-size: 19px;
-  padding:0 13px;
-}
-nav li{
-  list-style-type: none;
-  margin-left:20px;
-}
-nav .items{
-  display: flex;
-}
-nav input{
-  height: 35px;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 13px;
-  border:none
-}
-nav input:focus{
-  outline:none;
+.navbar-toggler:focus{
+  box-shadow: none;
 }
